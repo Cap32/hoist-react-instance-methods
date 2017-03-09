@@ -8,6 +8,9 @@ Copies specific methods from a child element to a parent instance. Can be useful
 import hoistReactInstanceMethods from 'hoist-react-instance-methods';
 
 hoistReactInstanceMethods(TargetComponent, getElement, methods);
+
+// `getElement` example:
+// const getElement = (instance) => instance.refs.app;
 ```
 
 ###### Arguments
