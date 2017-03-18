@@ -1,5 +1,7 @@
 # hoist-react-instance-methods
 
+[![Build Status](https://travis-ci.org/Cap32/hoist-react-instance-methods.svg?branch=master)](https://travis-ci.org/Cap32/hoist-react-instance-methods)
+
 Copies specific methods from a child instance to a parent instance. Can be useful in Hight-Order Component.
 
 ## Usage
