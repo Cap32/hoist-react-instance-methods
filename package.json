@@ -1,6 +1,6 @@
 {
   "name": "hoist-react-instance-methods",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hoist-react-instance-methods",
   "repository": "cantonjs/hoist-react-instance-methods",
   "scripts": {
