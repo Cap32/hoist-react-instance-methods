@@ -24,6 +24,10 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
+  "keywords": [
+    "react",
+    "hoc"
+  ],
   "author": "cap32",
   "license": "MIT",
   "dependencies": {},
