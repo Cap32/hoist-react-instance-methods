@@ -1,6 +1,6 @@
 {
   "name": "hoist-react-instance-methods",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Copies specific methods from a child instance to a parent instance",
   "repository": "cantonjs/hoist-react-instance-methods",
   "scripts": {
