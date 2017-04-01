@@ -36,7 +36,7 @@ describe('hoist-react-instance-methods', function () {
 		}
 
 		const getElement = (instance) => instance.refs.child;
-		hoistReactInstanceMethods(App, getElement, ['test']);
+		hoistReactInstanceMethods(getElement, ['test'])(App);
 
 		class Root extends Component {
 			componentDidMount() {

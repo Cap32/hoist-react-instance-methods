@@ -103,7 +103,7 @@ class App extends Component {
 ```js
 import hoistReactInstanceMethods from 'hoist-react-instance-methods';
 
-hoistReactInstanceMethods(getInstance, methods, TargetComponent);
+hoistReactInstanceMethods(getInstance, methods)(TargetComponent);
 
 // `getInstance` example:
 // const getInstance = (instance) => instance.refs.app;
@@ -111,9 +111,13 @@ hoistReactInstanceMethods(getInstance, methods, TargetComponent);
 
 ###### Arguments
 
-1. `getInstance` (Function): Get the ref element. The only argument `instance` is the instance of `TargetComponent`. Should return a component instance;
-2. `methods` ([String]): Specify method names to be copied;
-3. `TargetComponent` (ReactComponent): Target component to be copied.
+1. `getInstance` (Function): Get the ref element. The only argument `instance` is the instance of `TargetComponent`. Should return a component instance
+2. `methods` ([String]): Specify method names to be copied
+
+
+###### Returns
+
+A higher-order React component class
 
 
 ## Installation

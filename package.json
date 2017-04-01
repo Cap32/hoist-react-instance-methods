@@ -1,7 +1,7 @@
 {
   "name": "hoist-react-instance-methods",
   "version": "1.0.1",
-  "description": "hoist-react-instance-methods",
+  "description": "Copies specific methods from a child instance to a parent instance",
   "repository": "cantonjs/hoist-react-instance-methods",
   "scripts": {
     "prebuild": "rimraf ./dist ./lib ./es && mkdirp ./dist ./lib ./es",
@@ -26,7 +26,8 @@
   "jsnext:main": "es/index.js",
   "keywords": [
     "react",
-    "hoc"
+    "hoc",
+    "instance"
   ],
   "author": "cap32",
   "license": "MIT",

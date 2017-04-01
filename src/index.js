@@ -1,19 +1,22 @@
 
-export default function hoistReactInstance(Target, getInstance, methods) {
+export default function hoistReactInstance(getInstance, methods) {
+	return (Target) => {
+		if (typeof getInstance !== 'function' ||
+			typeof Target !== 'string' // don't hoist over string (html) components
+		) {
 
-	// don't hoist over string (html) components
-	if (typeof Target !== 'string') {
+			methods && [].concat(methods).forEach((method) => {
+				Target.prototype[method] = function (...args) {
+					const element = getInstance(this);
+					if (element && element[method]) {
+						return element[method](...args);
+					}
+				};
+			});
 
-		methods && [].concat(methods).forEach((method) => {
-			Target.prototype[method] = function (...args) {
-				const element = getInstance(this);
-				if (element && element[method]) {
-					return element[method](...args);
-				}
-			};
-		});
+		}
 
-	}
+		return Target;
 
-	return Target;
+	};
 }
